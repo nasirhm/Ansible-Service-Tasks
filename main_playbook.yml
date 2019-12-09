@@ -1,0 +1,8 @@
+---
+- name: Start, Stop and Restart [Service] by Ansible Roles
+  hosts: localhost
+  become: yes
+  gather_facts: false
+  tasks:
+   - import_role: 
+       name: services-control

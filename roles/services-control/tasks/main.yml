@@ -1,0 +1,16 @@
+---
+# tasks file for services-control
+- name: Start service httpd
+  service:
+    name: httpd
+    state: started
+
+- name: Stop service httpd
+  service:
+    name: httpd
+    state: stopped
+
+- name: Restart service httpd, in all cases
+  service:
+    name: httpd
+    state: restarted
